@@ -14,6 +14,7 @@ class AddCustomer extends Component {
     <div>
     <h1>Add Customer</h1>
           <div className='container'>
+
            <div>
             <label className='a2'>Customer name</label>
             <input />
