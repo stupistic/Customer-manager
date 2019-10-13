@@ -48,12 +48,12 @@ updateCustomer = (e) => {
 
      <div>
       <label className='a1'>Customer ID</label>
-      <input  className='c1' type='text' placeholder='Enter Customer ID' onChange = { e => this.setState({ CustomerID: e.target.value })} value={this.state.CustomerID}/>
+      <input  className='c1 text-center' type='text' placeholder='Enter Customer ID' onChange = { e => this.setState({ CustomerID: e.target.value })} value={this.state.CustomerID}/>
      </div>
 
      <div>
       <label className='a1'>Verified Status</label>
-      <input  className='c1' type='text' placeholder='Enter True/False' onChange = { e => this.setState({ Verified: e.target.value })} value={this.state.Verified}/>
+      <input  className='c1 text-center' type='text' placeholder='Enter True/False' onChange = { e => this.setState({ Verified: e.target.value })} value={this.state.Verified}/>
      </div>
 
   <button className='btn-sm btn-success a5' onClick = {this.updateCustomer}>Submit</button>

@@ -41,7 +41,6 @@ return Data;
 
 
   render(){
-    console.log(this.state.data)
     return <div className='container text-center'>
     <Link to='/'><button className='btn btn-sm   a1' >Home</button></Link>
     <Link to='/add-customer'><button className='btn btn-sm   a1'>Add Customer</button></Link>
@@ -49,7 +48,7 @@ return Data;
     <Link to='/update-customer'><button className='btn btn-sm   a1'>Update Customer</button></Link>
     <Link to='/delete-customer'><button className='btn btn-sm   a1'> Delete Customer</button></Link>
 
-    <div>
+    <div className='container'>
     <h1 className='f1   '>See Details</h1>
     <table>
       <tr>
