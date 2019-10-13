@@ -13,7 +13,7 @@ class AddCustomer extends Component {
 
  AddCustomer = (e) => {
    e.preventDefault()
-
+      const addcustomercall = "http://localhost:5000/addCustomer" 
       fetch("https://customanager.herokuapp.com/addCustomer", {
           method: "POST",
           headers: {

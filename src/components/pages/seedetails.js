@@ -9,6 +9,7 @@ state = {
 }
 
 componentDidMount(){
+  const seedetails = "http://localhost:5000/seeDetails"
   fetch("https://customanager.herokuapp.com/seeDetails").then(res => {
             if (res.ok) {
               return res.json();

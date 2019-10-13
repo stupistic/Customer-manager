@@ -12,6 +12,7 @@ class UpdateCustomer extends Component {
 
 updateCustomer = (e) => {
   e.preventDefault()
+  const updatecustomer = `http://localhost:5000/updateCustomer/${this.state.CustomerID}`
   fetch(`https://customanager.herokuapp.com/updateCustomer/${this.state.CustomerID}`, {
       method: "PUT",
       headers: {

@@ -10,6 +10,7 @@ class DeleteCustomer extends Component {
 
   deleteCustomer = (e) => {
     e.preventDefault()
+    const deletecustomer = `http://localhost:5000/deleteCustomer/${this.state.CustomerID}`
     fetch(`https://customanager.herokuapp.com/deleteCustomer/${this.state.CustomerID}`, {
         method: "DELETE",
         headers: {

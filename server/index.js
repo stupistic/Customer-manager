@@ -14,7 +14,7 @@ require('./Routes/route')(app)
 
 mongoose.connect(db.database, { useUnifiedTopology: true })
 .then(() => console.log('Connected to database...'))
-.catch(err => console.log(`Error: Failed to conecct db ${err}`))
+.catch(err => console.log(`Error: ${err}`))
 
 
 const Port = process.env.PORT || 5000
