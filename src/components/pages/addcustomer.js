@@ -50,23 +50,23 @@ class AddCustomer extends Component {
 
           <div>
            <label className='a1'>Id</label>
-           <input  className='c1' type='text' onChange = { e => this.setState({ Id: e.target.value })} value={this.state.Id} />
+           <input  className='c1' type='text' placeholder='Enter Id' onChange = { e => this.setState({ Id: e.target.value })} value={this.state.Id} />
           </div>
 
 
            <div>
             <label className='a1'>Customer name</label>
-            <input  className='c1' type='text' onChange = { e => this.setState({ CustomerName: e.target.value })} value={this.state.CustomerName} />
+            <input  className='c1' type='text' placeholder='Enter Customer Name' onChange = { e => this.setState({ CustomerName: e.target.value })} value={this.state.CustomerName} />
            </div>
 
            <div>
             <label className='a1'>Phone Number</label>
-            <input   className='c1'  type='text' onChange = { e => this.setState({ PhoneNumber: e.target.value })} value={this.state.PhoneNumber} />
+            <input   className='c1'  type='text' placeholder='Enter Phone Number' onChange = { e => this.setState({ PhoneNumber: e.target.value })} value={this.state.PhoneNumber} />
            </div>
 
            <div>
             <label className='a1'>Address</label>
-            <input  className='c1' type='text' onChange = { e => this.setState({ Address: e.target.value })} value={this.state.Address} />
+            <input  className='c1' type='text' placeholder='Enter Address' onChange = { e => this.setState({ Address: e.target.value })} value={this.state.Address} />
            </div>
 
       <button className='btn-sm a3' onClick = {this.AddCustomer}>Submit</button>
