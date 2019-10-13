@@ -1,7 +1,9 @@
 .a1{
   margin: 5px;
   width: 150px;
-  background-color: #fcd734;
+  background-color: rgb(99, 62, 224);
+  color: white;
+  font-weight: bold;
 
 }
 .a2{
@@ -9,5 +11,44 @@
   background-color: #ffe97d;
 }
 .a3{
-  background-color: #ffb300;
+  background-color: #42a5f5;
+  color: white;
+}
+
+.a4{
+  margin-top: 7px;
+  width: 100px;
+}
+.a5{
+  width: 100px;
+  margin-top: 7px;
+}
+.c1{
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+th{
+  background-color: #b39ddb
+}
+td, th {
+  border: 1px solid #ede7f6;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ede7f6;
+}
+.f1{
+
+
+  margin-top: 20px;
+  font-weight: lighter;
 }

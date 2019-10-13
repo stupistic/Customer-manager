@@ -12,12 +12,9 @@ require('./models/addcustomerModel')
 require('./Routes/route')(app)
 
 
-
-
-
-mongoose.connect(db.database)
+mongoose.connect(db.database, { useUnifiedTopology: true })
 .then(() => console.log('Connected to database...'))
-.catch(err => console.log(`Error: ${err}`))
+.catch(err => console.log(`Error: Failed to conecct db ${err}`))
 
 
 const Port = process.env.PORT || 5000

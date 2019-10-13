@@ -1,6 +1,7 @@
 
 const mongoose = require('mongoose');
-
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
 
 const customer = mongoose.model('AddCustomer')
 module.exports = (app) => {
@@ -25,13 +26,19 @@ app.get('/seeDetails', async (req,res) => {
   res.send(allCustomer)
 })
 
-app.put('/updateCustomer', async (req,res) => {
+app.put('/updateCustomer/:_id', async (req,res) => {
+  const updatedCustomer = await customer.findByIdAndUpdate(req.params._id, {
+      verified: req.body.verified
+    }, { new: true });
+  res.send(updatedCustomer);
 
 
 })
 
-app.delete('/deleteCustomer', async (req,res) => {
- 
+app.delete('/deleteCustomer/:_id', async (req,res) => {
+const removedCustomer = await customer.findByIdAndRemove(req.params._id)
+
+res.send(removedCustomer)
 })
 
 }
