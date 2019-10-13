@@ -1,1 +1,1 @@
- ![](customerManager.mp4)
+ ![](customerManager.gif)
