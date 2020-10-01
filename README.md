@@ -8,4 +8,4 @@
    -> go to the browser and search for given local host address.
 
 
-![](customerManager.gif)
+![](customerManager.gif).
